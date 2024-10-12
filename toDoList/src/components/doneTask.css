@@ -1,0 +1,45 @@
+.done-task-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f0f8ff;
+}
+
+.done-task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.done-task-card .card-title {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.done-task-card .card-text {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Status styles */
+.on-time {
+    color: #4caf50; /* Green for on-time tasks */
+    font-weight: bold;
+}
+
+.late {
+    color: #ff4d4d; /* Red for late tasks */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .done-task-card {
+        width: 90%;
+    }
+}

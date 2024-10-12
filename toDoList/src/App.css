@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Overall container for flex layout */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+}
+.page {
+  display: flex;              
+  justify-content: center;     
+  align-items: center;         
+  width: fit-content;         
+  padding: 20px;              
+}
+
+/* Each section within the container */
+.form-section, .task-section {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px; /* Space between sections */
+  position: relative; /* For positioning the border line */
+}
+
+/*Flex grow for size com */
+.form-section{
+  flex: 2;
+}
+
+.task-section{
+  flex: 1;
+}
+
+.toDo-section, .done-section {
+  border-left: 1px solid #ccc; /* Divider line */
+}
+
+.toDo-section {
+  border-left: none;
+}
+
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form-section, .task-section {
+    margin: 10px 0;
+    border-left: none;
+  }
+}
+
+.delete-button {
+  position: absolute;
+  top: 20px; 
+  right: 20px;
+  z-index: 1;
+}
+
+.del-btn {
+  border-radius: 5px;
+  border: 1px solid #ff4d4d;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.del-btn:hover {
+  background-color: #e60000;
+}

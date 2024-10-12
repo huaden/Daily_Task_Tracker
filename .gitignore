@@ -1,0 +1,30 @@
+#React frontend files to ignore
+
+# Logs
+/toDoList/logs
+/toDoList/*.log
+/toDoList/npm-debug.log*
+/toDoList/yarn-debug.log*
+/toDoList/yarn-error.log*
+/toDoList/pnpm-debug.log*
+/toDoList/lerna-debug.log*
+
+/toDoList/node_modules
+/toDoList/dist
+/toDoList/dist-ssr
+/toDoList/*.local
+
+# Editor directories and files
+/toDoList/.vscode/*
+!/toDoList/.vscode/extensions.json
+/toDoList/.idea
+/toDoList/.DS_Store
+/toDoList/*.suo
+/toDoList/*.ntvs*
+/toDoList/*.njsproj
+/toDoList/*.sln
+/toDoList/*.sw?
+
+#Node.js backend files to ignore
+/server/node_modules
+/server/tasks.db
