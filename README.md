@@ -1,7 +1,7 @@
 This is a basic activity tracker. All data will be stored in a database. Frontend in managed through react. Backend managed through Node.js
 Make sure you have NPM installed
 
-*All things in quotes are commands to run*
+*All things in quotes are commands to run.   *
 *Anything between < -- > is stuff that you name*
 Project Setup:
 1) Create two folders, one is for backend, other is for frontend
