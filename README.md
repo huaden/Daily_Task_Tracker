@@ -14,7 +14,7 @@ Backend Setup:
 
 Database Setup:
 6) run command "sqlite3 <what you want to name your database>.db"
-7) next make the table "CREATE TABLE toys (
+7) next make the table "CREATE TABLE <database name> (
     id INTEGER PRIMARY KEY,
     name TEXT,
     type TEXT
